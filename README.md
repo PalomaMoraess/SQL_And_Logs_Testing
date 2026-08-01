@@ -1,4 +1,4 @@
-# SQL e Análise de Logs - Sprint 6
+# SQL e Análise de Logs
 
 ## 📖 Sobre o projeto
 

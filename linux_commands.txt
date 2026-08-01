@@ -1,0 +1,34 @@
+# Sprint 6 - Linux Commands
+# TripleTen - Quality Assurance
+
+# ============================
+# Tarefa 1 - Localizar solicitações por endereço IP
+# ============================
+
+grep -r "^233\.201\." logs/2019/12
+
+# ============================
+# Tarefa 2 - Criar diretórios
+# ============================
+
+mkdir bug1
+
+mkdir bug1/events
+
+# ============================
+# Salvar os logs do dia 30/12/2019
+# ============================
+
+grep "30/Dec/2019" logs/2019/12/* > bug1/main.txt
+
+# ============================
+# Separar erros HTTP 400
+# ============================
+
+grep " 400 " bug1/main.txt > bug1/events/400.txt
+
+# ============================
+# Separar erros HTTP 500
+# ============================
+
+grep " 500 " bug1/main.txt > bug1/events/500.txt
